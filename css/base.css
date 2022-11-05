@@ -3,7 +3,9 @@
    --color-principal: #2A7AE4;
    --color-texto-oscuro: #464646;
    --color-texto-claro: #FFFFFF;
+   --color-texto-gris: #a2a2a2;
    --color-svg: invert(40%) sepia(79%) saturate(883%) hue-rotate(184deg) brightness(92%) contrast(94%);
+   --color-background-claro: #EAF2FD;
 }
 
 body {
@@ -14,12 +16,24 @@ body {
 a {
     color: var(--color-principal);
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .boton {
     text-align: center;
     border: solid var(--color-principal);
-    color: var(--color-principal);
+    color: var(--color-texto-claro);
+    background-color: var(--color-principal);
+    width: 30vw;
     padding: 1rem;
 }
+
+/* Responsive view Desktop 
+@media screen and (min-width: 1024px) {
+
+}*/
+
+/* Responsive view Tablet 
+@media screen and (min-width: 768px) {
+
+}*/

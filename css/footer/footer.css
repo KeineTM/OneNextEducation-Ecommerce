@@ -1,0 +1,10 @@
+.footer__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: white;
+    height: 35vh;
+    max-height: 120px;
+}

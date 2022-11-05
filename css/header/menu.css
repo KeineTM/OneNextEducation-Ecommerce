@@ -12,7 +12,8 @@
 }
 
 .header__list .boton {
-    width: 30vw;
+    background: var(--color-background-claro);
+    color: var(--color-principal);
     padding: .7rem;
 }
 

@@ -1,0 +1,72 @@
+.contacto {
+    background: var(--color-background-claro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+.contacto .logo-store {
+    margin-top: 1rem;
+}
+
+.contacto .logo__img{
+    height: 40px;
+}
+
+.contacto .logo__title {
+    font-size: 30px;
+}
+
+.contacto__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+}
+
+.contacto__list__links a {
+    color: var(--color-texto-oscuro);
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.contacto__form {
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    box-sizing: border-box;
+}
+
+.contacto__form-title {
+    font-weight: 700;
+}
+
+.contacto__form input, .contacto__form textarea {
+    border: none;
+    border-bottom: solid thin var(--color-principal);
+    border-radius: 3px;
+    padding: 1rem;
+    font-family: var(--raleway);
+    font-size: 16px;
+    color: var(--color-texto-oscuro);
+    resize: none;
+}
+
+.contacto__form input::placeholder, .contacto__form textarea::placeholder {
+    font-size: 12px;
+    color: var(--color-texto-gris);
+}
+
+.contacto__form input:hover, .contacto__form textarea:hover {
+    box-shadow: 0 2px 0 0 var(--color-principal);
+}
+
+.contacto__form input:focus, .contacto__form textarea:focus {
+    box-shadow: 0 2px 0 0 var(--color-principal);
+    outline: none;
+}

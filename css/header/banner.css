@@ -23,10 +23,5 @@
 .banner__text {
     font-size: 14px;
     font-weight: 600;
-}
-
-.banner__button {
-    width: 30%;
-    background-color: var(--color-principal);
-    color: var(--color-texto-claro);
+    color: var(--color-texto-oscuro);
 }

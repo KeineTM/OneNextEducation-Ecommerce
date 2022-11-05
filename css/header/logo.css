@@ -16,6 +16,6 @@
 }
 
 .logo__img {
-    height: 25px;
+    height: 20px;
     filter: var(--color-svg);
 }
