@@ -10,8 +10,8 @@
     flex-direction: column;
     justify-content: end;
     gap: .7rem;
-    padding: 1rem;
-    margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 4vh;
 }
 
 .banner__title {
@@ -24,4 +24,36 @@
     font-size: 14px;
     font-weight: 600;
     color: var(--color-texto-oscuro);
+}
+
+/* Responsive view Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .banner {
+        background-position: 0% 80%;
+    }
+
+    .banner__button {
+        width: 15%;
+    }
+}
+
+/* Responsive view Desktop */ 
+@media screen and (min-width: 1024px) {
+    .banner {
+        background-position: 0% 80%;
+
+        width: 100%;
+        margin-left: calc((-1rem - 10vw));
+        padding-left: calc(1rem + 10vw);
+        padding-right: calc(1rem + 10vw);
+        gap: 1.3rem;
+    }
+
+    .banner__title {
+        font-size: 52px;
+    }
+    
+    .banner__text {
+        font-size: 22px;
+    }
 }

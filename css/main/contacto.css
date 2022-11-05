@@ -2,13 +2,15 @@
     background: var(--color-background-claro);
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 2rem;
-    padding: 1rem 0;
+    padding: 2rem 0;
 }
 
-.contacto .logo-store {
-    margin-top: 1rem;
+.contacto__inf {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
 }
 
 .contacto .logo__img{
@@ -24,12 +26,12 @@
     flex-direction: column;
     gap: 1rem;
     text-align: center;
+    width: 100%;
 }
 
 .contacto__list__links a {
     color: var(--color-texto-oscuro);
     font-size: 16px;
-    font-weight: 100;
 }
 
 .contacto__form {
@@ -57,16 +59,69 @@
     resize: none;
 }
 
-.contacto__form input::placeholder, .contacto__form textarea::placeholder {
-    font-size: 12px;
-    color: var(--color-texto-gris);
-}
-
 .contacto__form input:hover, .contacto__form textarea:hover {
     box-shadow: 0 2px 0 0 var(--color-principal);
 }
 
-.contacto__form input:focus, .contacto__form textarea:focus {
-    box-shadow: 0 2px 0 0 var(--color-principal);
-    outline: none;
+
+/* Responsive view Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .contacto {
+        display: -webkit-flex;
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .contacto__inf {
+        flex-grow: 2;
+        align-items: flex-start;
+        padding-left: 1rem;
+    }
+
+    .contacto__form {
+        flex-grow: 1;
+        width: auto;
+        padding-left: 0;
+    }
+
+    .contacto__list {
+        text-align: left;
+    }
+}
+
+/* Responsive view Desktop */
+@media screen and (min-width: 1024px) {  
+    .contacto {
+        display: -webkit-flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0;
+
+        width: 100%;
+        margin-left: calc((-1rem - 10vw));
+        padding-left: calc(1rem + 10vw);
+        padding-right: calc(1rem + 10vw);
+    }
+
+    .contacto__inf {
+        flex-direction: row;
+        align-items: flex-start;
+        flex-grow: 1;
+    }
+
+    .logo-store {
+        width: 50%;
+    }
+
+    .contacto__list {
+        width: 50%;
+        text-align: left;
+        gap: 2rem;
+    }
+
+    .contacto__form {
+        width: auto;
+        padding: 0;
+        flex-grow: 1;
+    }
 }
