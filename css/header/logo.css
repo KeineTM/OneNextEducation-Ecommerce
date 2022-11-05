@@ -1,0 +1,21 @@
+.logo-store {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .2rem;
+    width: fit-content;
+}
+
+.logo__title {
+    font-weight: 700;
+    color: var(--color-principal);
+}
+
+.logo__title span {
+    color: var(--color-texto-oscuro);
+}
+
+.logo__img {
+    height: 25px;
+    filter: var(--color-svg);
+}

@@ -1,0 +1,32 @@
+.banner {
+    background: url('../../assets/christmas-tree.jpg') ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100vw;
+    height: 40vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: .7rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.banner__title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--color-texto-oscuro);
+}
+
+.banner__text {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.banner__button {
+    width: 30%;
+    background-color: var(--color-principal);
+    color: var(--color-texto-claro);
+}

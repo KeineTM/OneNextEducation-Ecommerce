@@ -1,0 +1,29 @@
+.header__menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+}
+
+.header__list .boton {
+    width: 30vw;
+    padding: .7rem;
+}
+
+.header__list:nth-of-type(2) {
+    order: 3;
+}
+
+.header__search-input {
+    display: none;
+}
+
+.header__search-img {
+    width: 20px;
+}

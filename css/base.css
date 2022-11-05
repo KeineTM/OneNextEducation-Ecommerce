@@ -1,0 +1,25 @@
+:root{
+   --raleway: 'Raleway';
+   --color-principal: #2A7AE4;
+   --color-texto-oscuro: #464646;
+   --color-texto-claro: #FFFFFF;
+   --color-svg: invert(40%) sepia(79%) saturate(883%) hue-rotate(184deg) brightness(92%) contrast(94%);
+}
+
+body {
+    font-family: var(--raleway);
+    color: var(--color-texto-oscuro);
+}
+
+a {
+    color: var(--color-principal);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.boton {
+    text-align: center;
+    border: solid var(--color-principal);
+    color: var(--color-principal);
+    padding: 1rem;
+}
