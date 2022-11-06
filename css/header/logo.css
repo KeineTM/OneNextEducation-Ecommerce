@@ -3,7 +3,7 @@
     flex-direction: row;
     align-items: center;
     gap: .2rem;
-    width: fit-content;
+    width: max-content;
 }
 
 .logo__title {

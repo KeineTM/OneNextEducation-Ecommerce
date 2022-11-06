@@ -8,7 +8,8 @@
    --color-background-gris-claro: #e8f0e9;
 
    /* Padding lateral para la versión de escritorio */
-   --padding-desktop: calc(1rem + 10vw); 
+   --padding-desktop: calc(1rem + 10vw);
+   --margin-desktop: calc(-1rem - 10vw);
 
    /* Generados mediante https://codepen.io/sosuke/pen/Pjoqqp a través del código hexadecimal para colorear svg */
    --color-svg: invert(81%) sepia(60%) saturate(2986%) hue-rotate(360deg) brightness(102%) contrast(88%);
@@ -47,12 +48,13 @@ input, textarea {
     border-bottom: solid thin var(--color-principal);
     border-radius: 3px;
     padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+
     font-family: var(--raleway);
     font-size: 16px;
     color: var(--color-texto-oscuro);
     resize: none;
-    width: 100%;
-    box-sizing: border-box;
 }
 
 input::placeholder, textarea::placeholder {
@@ -73,6 +75,7 @@ input:focus, textarea:focus {
     background-color: var(--color-principal);
     width: 30vw;
     max-width: 150px;
+    height: fit-content;
     padding: 1rem;
     transition: .5s;
 }

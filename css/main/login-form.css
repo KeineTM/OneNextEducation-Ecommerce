@@ -4,7 +4,8 @@ main {
 
 .login-form {
     background: var(--color-background-gris-claro);
-    padding: 20vh 0;
+    height: 100vh;
+    justify-content: center;
     align-items: center;
 }
 
@@ -24,8 +25,17 @@ main {
 @media screen and (min-width: 1024px) {
     .login-form {
         width: 100%;
-        margin-left: calc((-1rem - 10vw));
-        padding-left: calc(1rem + 10vw);
-        padding-right: calc(1rem + 10vw);
+        gap: 2rem;
+        margin-left: var(--margin-desktop);
+        padding-left: var(--padding-desktop);
+        padding-right: var(--padding-desktop);
+    }
+
+    .login-form__title {
+        font-size: 22px;
+    }
+
+    .login-form__email, .login-form__pass {
+        max-width: 500px;
     }
 }

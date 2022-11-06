@@ -81,9 +81,9 @@
         gap: 0;
 
         width: 100%;
-        margin-left: calc((-1rem - 10vw));
-        padding-left: calc(1rem + 10vw);
-        padding-right: calc(1rem + 10vw);
+        margin-left: var(--margin-desktop);
+        padding-left: var(--padding-desktop);
+        padding-right: var(--padding-desktop);
     }
 
     .contacto__inf {
