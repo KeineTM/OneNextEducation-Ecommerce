@@ -5,9 +5,9 @@
    --color-texto-claro: #FFFFFF;
    --color-texto-gris: #a2a2a2;
    --color-background-claro: #f9f7f1;
-   --color-background-gris-claro: #eaeaea;
+   --color-background-gris-claro: #e8f0e9;
 
-   /* Padding laterales para la versión de escritorio */
+   /* Padding lateral para la versión de escritorio */
    --padding-desktop: calc(1rem + 10vw); 
 
    /* Generados mediante https://codepen.io/sosuke/pen/Pjoqqp a través del código hexadecimal para colorear svg */
@@ -21,13 +21,16 @@ body {
     
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    box-sizing: border-box;
 }
 
 main {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+}
+
+h2, h3 {
+    font-weight: 700;
 }
 
 a {
@@ -37,6 +40,19 @@ a {
 
 a:hover {
     font-weight: 700;
+}
+
+input, textarea {
+    border: none;
+    border-bottom: solid thin var(--color-principal);
+    border-radius: 3px;
+    padding: 1rem;
+    font-family: var(--raleway);
+    font-size: 16px;
+    color: var(--color-texto-oscuro);
+    resize: none;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 input::placeholder, textarea::placeholder {

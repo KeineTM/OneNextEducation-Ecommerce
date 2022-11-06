@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniStore</title>
+
+    <!-- Font Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    
+     <!--Style sheets-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header/logo.css">
+    <link rel="stylesheet" href="css/header/menu.css">
+    <link rel="stylesheet" href="css/main/contacto.css">
+    <link rel="stylesheet" href="css/footer/footer.css">
+    <link rel="stylesheet" href="css/main/login-form.css">
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <ul class="header__menu">
+            <li class="header__list">
+                <a href="index.html" class="logo-store">
+                    <img src="assets/icons/gift2.svg" alt="Logo de la tienda" class="logo__img">
+                    <h1 class="logo__title">Mini <span>Store</span></h1>
+                </a>
+            </li> 
+            <li class="header__list search-bar">
+                <input type="text" placeholder="¿Qué desea buscar?" class="header__search-input">
+                <img src="assets/icons/search1.svg" alt="Ícono buscar" class="header__search-img">
+            </li>
+        </ul>
+    </header>
+    
+    <main>
+        <form action="" class="login-form contacto__form">
+            <h2 class="login-form__title">Iniciar sesión</h2>
+            <input type="text" class="login-form__email" placeholder="Escriba su correo electrónico">
+            <input type="text" class="login-form__pass" placeholder="Escriba su contraseña">
+            <a href="#" class="login-form__btn boton">Entrar</a>
+        </form>
+
+        <section class="contacto">
+            <div class="contacto__inf">
+                <a href="index.html" class="logo-store">
+                    <img src="assets/icons/gift2.svg" alt="Logo de la tienda" class="logo__img">
+                    <h1 class="logo__title">Mini <span>Store</span></h1>
+                </a>
+    
+                <ul class="contacto__list">
+                    <li class="contacto__list__links"><a href="#">Quiénes somos</a></li>
+                    <li class="contacto__list__links"><a href="#">Política de privacidad</a></li>
+                    <li class="contacto__list__links"><a href="#">Programa de fidelidad</a></li>
+                    <li class="contacto__list__links"><a href="#">Nuestras tiendas</a></li>
+                    <li class="contacto__list__links"><a href="#">Pagos</a></li>
+                    <li class="contacto__list__links"><a href="#">Envíos</a></li>
+                </ul>
+            </div>
+
+            <form action="" class="contacto__form">
+                <h3 class="contacto__form-title">Hable con nosotros</h3>
+                <input type="text" placeholder="Nombre" data-form="nombre">
+                <textarea type="text" placeholder="Escriba su mensaje" rows="5" cols="40" data-form="mensaje"></textarea>
+                <a href="#" class="contacto__form-button boton" data-form="boton">Enviar mensaje</a>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <section class="footer__text">
+            <p>Desarrollado por Jessica Trejo</p>
+            <p>2022</p>
+        </section>
+    </footer>
+
+</body>
+</html>

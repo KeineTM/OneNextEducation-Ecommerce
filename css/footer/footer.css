@@ -1,7 +1,8 @@
 .footer__text {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     text-align: center;
     background: white;
-    height: 4.5rem;
+    height: 20vh;
 }

@@ -79,7 +79,12 @@
 
 /* Responsive view Desktop */
 @media screen and (min-width: 1024px) {
-    .category, .category__title {
+    .category {
+        padding-bottom: 1rem;
+    }
+    
+    .category__title {
+        padding: 0;
         padding-bottom: 1rem;
     }
 

@@ -12,18 +12,20 @@
     gap: .7rem;
     padding-left: 1rem;
     padding-bottom: 4vh;
+
+    color: var(--color-texto-claro);
+    text-shadow: var(--color-texto-oscuro) 0.1em 0.1em 0.2em;
 }
 
 .banner__title {
     font-size: 22px;
     font-weight: 700;
-    color: var(--color-texto-oscuro);
+    
 }
 
 .banner__text {
     font-size: 14px;
     font-weight: 600;
-    color: var(--color-texto-oscuro);
 }
 
 /* Responsive view Tablet */
