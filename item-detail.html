@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniStore</title>
+
+    <!-- Font Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    
+     <!--Style sheets-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header/logo.css">
+    <link rel="stylesheet" href="css/header/menu.css">
+    <link rel="stylesheet" href="css/main/contacto.css">
+    <link rel="stylesheet" href="css/main/category.css">
+    <link rel="stylesheet" href="css/footer/footer.css">
+    <link rel="stylesheet" href="css/main/login-form.css">
+    <link rel="stylesheet" href="css/main/item-detail.css">
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <ul class="header__menu">
+            <li class="header__list">
+                <a href="index.html" class="logo-store">
+                    <img src="assets/icons/gift2.svg" alt="Logo de la tienda" class="logo__img">
+                    <h1 class="logo__title">Mini <span>Store</span></h1>
+                </a>
+            </li> 
+            <li class="header__list search-bar">
+                <input type="text" placeholder="¿Qué desea buscar?" class="header__search-input">
+                <img src="assets/icons/search1.svg" alt="Ícono buscar" class="header__search-img">
+            </li>
+        </ul>
+    </header>
+    
+    <!--Main content-->
+    <main>
+        <section class="item-detail">
+            <img src="assets/items/Fila_conjunto-short_nino.webp" alt="Imagen del producto" class="item-detail__img">
+            <ul class="item-detail__info">
+                <li><h2 class="item-detail__title">Producto XYZ</h2></li>
+                <li><h3 class="item-detail__price">$9,999.99</h3></li>
+                <li>
+                    <p class="item-detail__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit laborum error tempore voluptate, cumque repudiandae optio placeat dolores repellendus aut alias autem eligendi non deleniti laboriosam sit eveniet vel eaque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit laborum error tempore voluptate, cumque repudiandae optio placeat dolores repellendus aut alias autem eligendi non deleniti laboriosam sit eveniet vel eaque?</p>
+                </li>
+            </ul>           
+        </section>
+
+        <section class="category">
+            <div class="category__section">
+                <div class="category__title">
+                    <h2 class="category__title-text">Productos similares</h2>
+                </div>
+                <ul class="category__list">
+                    <li class="category__box">
+                        <img src="assets/items/Fila_conjunto-short_nino.webp" alt="Imagen del producto" class="category__box-img">
+                        <ul class="category__box-body">
+                            <li class="category__box-text">Producto XYZ</li>
+                            <li class="category__box-text">$9,999.99</li>
+                            <li class="category__box-text"> <a href="item-detail.html">Ver producto</a> </li>
+                        </ul>
+                    </li>
+                    <li class="category__box">
+                        <img src="assets/items/Skechers_conjunto-nino.webp" alt="Imagen del producto" class="category__box-img">
+                        <ul class="category__box-body">
+                            <li class="category__box-text">Producto XYZ</li>
+                            <li class="category__box-text">$9,999.99</li>
+                            <li class="category__box-text"> <a href="#">Ver producto</a> </li>
+                        </ul>
+                    </li>
+                    <li class="category__box">
+                        <img src="assets/items/Nautica_pijama_nina.webp" alt="Imagen del producto" class="category__box-img">
+                        <ul class="category__box-body">
+                            <li class="category__box-text">Producto XYZ</li>
+                            <li class="category__box-text">$9,999.99</li>
+                            <li class="category__box-text"> <a href="#">Ver producto</a> </li>
+                        </ul>
+                    </li>
+                    <li class="category__box">
+                        <img src="assets/items/LB_conjunto-short_nino.webp" alt="Imagen del producto" class="category__box-img">
+                        <ul class="category__box-body">
+                            <li class="category__box-text">Producto XYZ</li>
+                            <li class="category__box-text">$9,999.99</li>
+                            <li class="category__box-text"> <a href="#">Ver producto</a> </li>
+                        </ul>
+                    </li>
+                    <li class="category__box">
+                        <img src="assets/items/zapatos-agua_nina.webp" alt="Imagen del producto" class="category__box-img">
+                        <ul class="category__box-body">
+                            <li class="category__box-text">Producto XYZ</li>
+                            <li class="category__box-text">$9,999.99</li>
+                            <li class="category__box-text"> <a href="#">Ver producto</a> </li>
+                        </ul>
+                    </li>
+                    <li class="category__box">
+                        <img src="assets/items/zapatos-agua_nino.webp" alt="Imagen del producto" class="category__box-img">
+                        <ul class="category__box-body">
+                            <li class="category__box-text">Producto XYZ</li>
+                            <li class="category__box-text">$9,999.99</li>
+                            <li class="category__box-text"> <a href="#">Ver producto</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!--Contact section-->
+        <section class="contacto">
+            <div class="contacto__inf">
+                <a href="index.html" class="logo-store">
+                    <img src="assets/icons/gift2.svg" alt="Logo de la tienda" class="logo__img">
+                    <h1 class="logo__title">Mini <span>Store</span></h1>
+                </a>
+    
+                <ul class="contacto__list">
+                    <li class="contacto__list__links"><a href="#">Quiénes somos</a></li>
+                    <li class="contacto__list__links"><a href="#">Política de privacidad</a></li>
+                    <li class="contacto__list__links"><a href="#">Programa de fidelidad</a></li>
+                    <li class="contacto__list__links"><a href="#">Nuestras tiendas</a></li>
+                    <li class="contacto__list__links"><a href="#">Pagos</a></li>
+                    <li class="contacto__list__links"><a href="#">Envíos</a></li>
+                </ul>
+            </div>
+
+            <form action="" class="contacto__form">
+                <h3 class="contacto__form-title">Hable con nosotros</h3>
+                <input type="text" placeholder="Nombre" data-form="nombre">
+                <textarea type="text" placeholder="Escriba su mensaje" rows="5" cols="40" data-form="mensaje"></textarea>
+                <a href="#" class="contacto__form-button boton" data-form="boton">Enviar mensaje</a>
+            </form>
+        </section>
+    </main>
+    
+    <!--Footer info-->
+    <footer>
+        <section class="footer__text">
+            <p>Desarrollado por Jessica Trejo</p>
+            <p>2022</p>
+        </section>
+    </footer>
+
+</body>
+</html>

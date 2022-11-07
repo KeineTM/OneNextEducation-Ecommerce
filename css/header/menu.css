@@ -83,7 +83,6 @@ header {
 /* Responsive view Desktop */
 @media screen and (min-width: 1024px) {
     .header__menu {
-        margin-left: var(--margin-desktop);
         padding-left: var(--padding-desktop);
         padding-right: var(--padding-desktop);
         grid-template-columns: 200px calc(80% - 200px) 20%;

@@ -5,7 +5,7 @@
    --color-texto-claro: #FFFFFF;
    --color-texto-gris: #a2a2a2;
    --color-background-claro: #f9f7f1;
-   --color-background-gris-claro: #e8f0e9;
+   --color-background-gris-claro: #eef2ef;
 
    /* Padding lateral para la versión de escritorio */
    --padding-desktop: calc(1rem + 10vw);
@@ -73,6 +73,7 @@ input:focus, textarea:focus {
     border: solid var(--color-principal);
     color: var(--color-texto-claro);
     background-color: var(--color-principal);
+    min-width: 100px;
     width: 30vw;
     max-width: 150px;
     height: fit-content;
@@ -93,11 +94,6 @@ input:focus, textarea:focus {
 
 /* Responsive view Desktop */
 @media screen and (min-width: 1024px) {
-    body {
-        padding-left: var(--padding-desktop);
-        padding-right: var(--padding-desktop);
-    }
-
     a {
         font-size: 16px;
     }
