@@ -85,7 +85,7 @@ header {
     .header__menu {
         padding-left: var(--padding-desktop);
         padding-right: var(--padding-desktop);
-        grid-template-columns: 200px calc(80% - 200px) 20%;
+        grid-template-columns: 200px calc(75% - 200px) 25%;
     }
 
     .header__list {

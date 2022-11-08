@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniStore - Admin</title>
+
+    <!-- Font Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    
+     <!--Style sheets-->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/header/logo.css">
+    <link rel="stylesheet" href="../css/header/menu.css">
+    <link rel="stylesheet" href="../css/main/contacto.css">
+    <link rel="stylesheet" href="../css/main/category.css">
+    <link rel="stylesheet" href="../css/footer/footer.css">
+    <link rel="stylesheet" href="../css/main/admin-module/admin-item.css">
+
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <ul class="header__menu">
+            <li class="header__list">
+                <a href="../index.html" class="logo-store">
+                    <img src="../assets/icons/gift2.svg" alt="Logo de la tienda" class="logo__img">
+                    <h1 class="logo__title">Mini <span>Store</span></h1>
+                </a>
+            </li> 
+            <li class="header__list search-bar">
+                <input type="text" placeholder="¿Qué desea buscar?" class="header__search-input">
+                <img src="../assets/icons/search1.svg" alt="Ícono buscar" class="header__search-img">
+            </li>
+        </ul>
+    </header>
+
+    <!--Main content-->
+    <main>
+        <section class="category">
+            <div class="category__section">
+                <div class="category__title">
+                    <h2 class="category__title-text">Todos los productos</h2>
+                    <a href="admin-item__form.html" class="admin-item__add-btn boton">Agregar producto</a>
+                </div>
+                <ul class="category__list">
+                    <li class="category__box">
+                        <div class="category__admin-box">
+                            <img src="../assets/icons/delete1.svg" alt="Borrar" class="category__admin-img" data-admin="delete">
+                            <img src="../assets/icons/edit1.svg" alt="Editar" class="category__admin-img" data-admin="edit">
+                        </div>
+                        <img src="../assets/items/Fila_conjunto-short_nino.webp" alt="Imagen del producto" class="category__box-img">
+                        <ul class="category__box-body">
+                            <li class="category__box-text">Producto XYZ</li>
+                            <li class="category__box-text"><p class="category__box__item-price" data-item="price">$9,999.99</p></li>
+                            <li class="category__box-text">#1111111</li>
+                        </ul>
+                    </li>
+                    <li class="category__box">
+                        <div class="category__admin-box">
+                            <img src="../assets/icons/delete1.svg" alt="Borrar" class="category__admin-img" data-admin="delete">
+                            <img src="../assets/icons/edit1.svg" alt="Editar" class="category__admin-img" data-admin="edit">
+                        </div>
+                        <img src="../assets/items/Skechers_conjunto-nino.webp" alt="Imagen del producto" class="category__box-img">
+                        <ul class="category__box-body">
+                            <li class="category__box-text">Producto XYZ</li>
+                            <li class="category__box-text"><p class="category__box__item-price" data-item="price">$9,999.99</p></li>
+                            <li class="category__box-text">#1111111</li>
+                        </ul>
+                    </li>
+                    <li class="category__box">
+                        <div class="category__admin-box">
+                            <img src="../assets/icons/delete1.svg" alt="Borrar" class="category__admin-img" data-admin="delete">
+                            <img src="../assets/icons/edit1.svg" alt="Editar" class="category__admin-img" data-admin="edit">
+                        </div>
+                        <img src="../assets/items/Nautica_pijama_nina.webp" alt="Imagen del producto" class="category__box-img">
+                        <ul class="category__box-body">
+                            <li class="category__box-text">Producto XYZ</li>
+                            <li class="category__box-text"><p class="category__box__item-price" data-item="price">$9,999.99</p></li>
+                            <li class="category__box-text">#1111111</li>
+                        </ul>
+                    </li>
+                    <li class="category__box">
+                        <div class="category__admin-box">
+                            <img src="../assets/icons/delete1.svg" alt="Borrar" class="category__admin-img" data-admin="delete">
+                            <img src="../assets/icons/edit1.svg" alt="Editar" class="category__admin-img" data-admin="edit">
+                        </div>
+                        <img src="../assets/items/LB_conjunto-short_nino.webp" alt="Imagen del producto" class="category__box-img">
+                        <ul class="category__box-body">
+                            <li class="category__box-text">Producto XYZ</li>
+                            <li class="category__box-text"><p class="category__box__item-price" data-item="price">$9,999.99</p></li>
+                            <li class="category__box-text">#1111111</li>
+                        </ul>
+                    </li>
+                    <li class="category__box">
+                        <div class="category__admin-box">
+                            <img src="../assets/icons/delete1.svg" alt="Borrar" class="category__admin-img" data-admin="delete">
+                            <img src="../assets/icons/edit1.svg" alt="Editar" class="category__admin-img" data-admin="edit">
+                        </div>
+                        <img src="../assets/items/zapatos-agua_nina.webp" alt="Imagen del producto" class="category__box-img">
+                        <ul class="category__box-body">
+                            <li class="category__box-text">Producto XYZ</li>
+                            <li class="category__box-text"><p class="category__box__item-price" data-item="price">$9,999.99</p></li>
+                            <li class="category__box-text">#1111111</li>
+                        </ul>
+                    </li>
+                    <li class="category__box">
+                        <div class="category__admin-box">
+                            <img src="../assets/icons/delete1.svg" alt="Borrar" class="category__admin-img" data-admin="delete">
+                            <img src="../assets/icons/edit1.svg" alt="Editar" class="category__admin-img" data-admin="edit">
+                        </div>
+                        <img src="../assets/items/zapatos-agua_nino.webp" alt="Imagen del producto" class="category__box-img">
+                        <ul class="category__box-body">
+                            <li class="category__box-text">Producto XYZ</li>
+                            <li class="category__box-text"><p class="category__box__item-price" data-item="price">$9,999.99</p></li>
+                            <li class="category__box-text">#1111111</li>
+                        </ul>
+                    </li>
+                    <li class="category__box">
+                        <div class="category__admin-box">
+                            <img src="../assets/icons/delete1.svg" alt="Borrar" class="category__admin-img" data-admin="delete">
+                            <img src="../assets/icons/edit1.svg" alt="Editar" class="category__admin-img" data-admin="edit">
+                        </div>
+                        <img src="../assets/items/blusa.webp" alt="Imagen del producto" class="category__box-img">
+                        <ul class="category__box-body">
+                            <li class="category__box-text">Producto XYZ</li>
+                            <li class="category__box-text"><p class="category__box__item-price" data-item="price">$9,999.99</p></li>
+                            <li class="category__box-text">#1111111</li>
+                        </ul>
+                    </li>
+                    <li class="category__box">
+                        <div class="category__admin-box">
+                            <img src="../assets/icons/delete1.svg" alt="Borrar" class="category__admin-img" data-admin="delete">
+                            <img src="../assets/icons/edit1.svg" alt="Editar" class="category__admin-img" data-admin="edit">
+                        </div>
+                        <img src="../assets/items/Kirk_leggin_dama2.webp" alt="Imagen del producto" class="category__box-img">
+                        <ul class="category__box-body">
+                            <li class="category__box-text">Producto XYZ</li>
+                            <li class="category__box-text"><p class="category__box__item-price" data-item="price">$9,999.99</p></li>
+                            <li class="category__box-text">#1111111</li>
+                        </ul>
+                    </li>
+                    <li class="category__box">
+                        <div class="category__admin-box">
+                            <img src="../assets/icons/delete1.svg" alt="Borrar" class="category__admin-img" data-admin="delete">
+                            <img src="../assets/icons/edit1.svg" alt="Editar" class="category__admin-img" data-admin="edit">
+                        </div>
+                        <img src="../assets/items/Par_playeras.webp" alt="Imagen del producto" class="category__box-img">
+                        <ul class="category__box-body">
+                            <li class="category__box-text">Producto XYZ</li>
+                            <li class="category__box-text"><p class="category__box__item-price" data-item="price">$9,999.99</p></li>
+                            <li class="category__box-text">#1111111</li>
+                        </ul>
+                    </li>
+                    <li class="category__box">
+                        <div class="category__admin-box">
+                            <img src="../assets/icons/delete1.svg" alt="Borrar" class="category__admin-img" data-admin="delete">
+                            <img src="../assets/icons/edit1.svg" alt="Editar" class="category__admin-img" data-admin="edit">
+                        </div>
+                        <img src="../assets/items/WP_camisa.webp" alt="Imagen del producto" class="category__box-img">
+                        <ul class="category__box-body">
+                            <li class="category__box-text">Producto XYZ</li>
+                            <li class="category__box-text"><p class="category__box__item-price" data-item="price">$9,999.99</p></li>
+                            <li class="category__box-text">#1111111</li>
+                        </ul>
+                    </li>
+                    <li class="category__box">
+                        <div class="category__admin-box">
+                            <img src="../assets/icons/delete1.svg" alt="Borrar" class="category__admin-img" data-admin="delete">
+                            <img src="../assets/icons/edit1.svg" alt="Editar" class="category__admin-img" data-admin="edit">
+                        </div>
+                        <img src="../assets/items/Sudadera-caballero.webp" alt="Imagen del producto" class="category__box-img">
+                        <ul class="category__box-body">
+                            <li class="category__box-text">Producto XYZ</li>
+                            <li class="category__box-text"><p class="category__box__item-price" data-item="price">$9,999.99</p></li>
+                            <li class="category__box-text">#1111111</li>
+                        </ul>
+                    </li>
+                    <li class="category__box">
+                        <div class="category__admin-box">
+                            <img src="../assets/icons/delete1.svg" alt="Borrar" class="category__admin-img" data-admin="delete">
+                            <img src="../assets/icons/edit1.svg" alt="Editar" class="category__admin-img" data-admin="edit">
+                        </div>
+                        <img src="../assets/items/Vanity_blusa_dama.webp" alt="Imagen del producto" class="category__box-img">
+                        <ul class="category__box-body">
+                            <li class="category__box-text">Producto XYZ</li>
+                            <li class="category__box-text"><p class="category__box__item-price" data-item="price">$9,999.99</p></li>
+                            <li class="category__box-text">#1111111</li>
+                        </ul>
+                    </li>
+                    <li class="category__box">
+                        <div class="category__admin-box">
+                            <img src="../assets/icons/delete1.svg" alt="Borrar" class="category__admin-img" data-admin="delete">
+                            <img src="../assets/icons/edit1.svg" alt="Editar" class="category__admin-img" data-admin="edit">
+                        </div>
+                        <img src="../assets/items/713gJALpANL._AC_SL1500_.jpg" alt="Imagen del producto" class="category__box-img">
+                        <ul class="category__box-body">
+                            <li class="category__box-text">Producto XYZ</li>
+                            <li class="category__box-text"><p class="category__box__item-price" data-item="price">$9,999.99</p></li>
+                            <li class="category__box-text">#1111111</li>
+                        </ul>
+                    </li>
+                    <li class="category__box">
+                        <div class="category__admin-box">
+                            <img src="../assets/icons/delete1.svg" alt="Borrar" class="category__admin-img" data-admin="delete">
+                            <img src="../assets/icons/edit1.svg" alt="Editar" class="category__admin-img" data-admin="edit">
+                        </div>
+                        <img src="../assets/items/81ZsAsqrbnL._AC_SL1500_.jpg" alt="Imagen del producto" class="category__box-img">
+                        <ul class="category__box-body">
+                            <li class="category__box-text">Producto XYZ</li>
+                            <li class="category__box-text"><p class="category__box__item-price" data-item="price">$9,999.99</p></li>
+                            <li class="category__box-text">#1111111</li>
+                        </ul>
+                    </li>
+                    <li class="category__box">
+                        <div class="category__admin-box">
+                            <img src="../assets/icons/delete1.svg" alt="Borrar" class="category__admin-img" data-admin="delete">
+                            <img src="../assets/icons/edit1.svg" alt="Editar" class="category__admin-img" data-admin="edit">
+                        </div>
+                        <img src="../assets/items/814Ppz1ZbwS._AC_SX425_.jpg" alt="Imagen del producto" class="category__box-img">
+                        <ul class="category__box-body">
+                            <li class="category__box-text">Producto XYZ</li>
+                            <li class="category__box-text"><p class="category__box__item-price" data-item="price">$9,999.99</p></li>
+                            <li class="category__box-text">#1111111</li>
+                        </ul>
+                    </li>
+                    <li class="category__box">
+                        <div class="category__admin-box">
+                            <img src="../assets/icons/delete1.svg" alt="Borrar" class="category__admin-img" data-admin="delete">
+                            <img src="../assets/icons/edit1.svg" alt="Editar" class="category__admin-img" data-admin="edit">
+                        </div>
+                        <img src="../assets/items/915+Kx-34+L._AC_SL1500_.jpg" alt="Imagen del producto" class="category__box-img">
+                        <ul class="category__box-body">
+                            <li class="category__box-text">Producto XYZ</li>
+                            <li class="category__box-text"><p class="category__box__item-price" data-item="price">$9,999.99</p></li>
+                            <li class="category__box-text">#1111111</li>
+                        </ul>
+                    </li>
+                    <li class="category__box">
+                        <div class="category__admin-box">
+                            <img src="../assets/icons/delete1.svg" alt="Borrar" class="category__admin-img" data-admin="delete">
+                            <img src="../assets/icons/edit1.svg" alt="Editar" class="category__admin-img" data-admin="edit">
+                        </div>
+                        <img src="../assets/items/Imaginext_ToyStory_pizza.jpg" alt="Imagen del producto" class="category__box-img">
+                        <ul class="category__box-body">
+                            <li class="category__box-text">Producto XYZ</li>
+                            <li class="category__box-text"><p class="category__box__item-price" data-item="price">$9,999.99</p></li>
+                            <li class="category__box-text">#1111111</li>
+                        </ul>
+                    </li>
+                    <li class="category__box">
+                        <div class="category__admin-box">
+                            <img src="../assets/icons/delete1.svg" alt="Borrar" class="category__admin-img" data-admin="delete">
+                            <img src="../assets/icons/edit1.svg" alt="Editar" class="category__admin-img" data-admin="edit">
+                        </div>
+                        <img src="../assets/items/Distroller_cocina.jpg" alt="Imagen del producto" class="category__box-img">
+                        <ul class="category__box-body">
+                            <li class="category__box-text">Producto XYZ</li>
+                            <li class="category__box-text"><p class="category__box__item-price" data-item="price">$9,999.99</p></li>
+                            <li class="category__box-text">#1111111</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contacto">
+            <div class="contacto__inf">
+                <a href="../index.html" class="logo-store">
+                    <img src="../assets/icons/gift2.svg" alt="Logo de la tienda" class="logo__img">
+                    <h1 class="logo__title">Mini <span>Store</span></h1>
+                </a>
+    
+                <ul class="contacto__list">
+                    <li class="contacto__list__links"><a href="#">Quiénes somos</a></li>
+                    <li class="contacto__list__links"><a href="#">Política de privacidad</a></li>
+                    <li class="contacto__list__links"><a href="#">Programa de fidelidad</a></li>
+                    <li class="contacto__list__links"><a href="#">Nuestras tiendas</a></li>
+                    <li class="contacto__list__links"><a href="#">Pagos</a></li>
+                    <li class="contacto__list__links"><a href="#">Envíos</a></li>
+                </ul>
+            </div>
+
+            <form action="" class="contacto__form">
+                <h3 class="contacto__form-title">Hable con nosotros</h3>
+                <input type="text" placeholder="Nombre" data-form="nombre">
+                <textarea type="text" placeholder="Escriba su mensaje" rows="5" cols="40" data-form="mensaje"></textarea>
+                <a href="#" class="contacto__form-button boton" data-form="boton">Enviar mensaje</a>
+            </form>
+        </section>
+    </main>
+    
+    <!--Footer info-->
+    <footer>
+        <section class="footer__text">
+            <p>Desarrollado por Jessica Trejo</p>
+            <p>2022</p>
+        </section>
+    </footer>
+    
+</body>
+</html>

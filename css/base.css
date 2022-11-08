@@ -28,6 +28,7 @@ body {
 main {
     display: flex;
     flex-direction: column;
+    background: var(--color-background-gris-claro);
 }
 
 h2, h3 {
@@ -75,7 +76,6 @@ input:focus, textarea:focus {
     background-color: var(--color-principal);
     min-width: 100px;
     width: 30vw;
-    max-width: 150px;
     height: fit-content;
     padding: 1rem;
     transition: .5s;
@@ -87,10 +87,12 @@ input:focus, textarea:focus {
     font-weight: 100;
 }
 
-/* Responsive view Tablet 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-
-}*/
+/* Responsive view Tablet */
+@media screen and (min-width: 768px) {
+    .boton {
+        max-width: 150px;
+    }
+}
 
 /* Responsive view Desktop */
 @media screen and (min-width: 1024px) {

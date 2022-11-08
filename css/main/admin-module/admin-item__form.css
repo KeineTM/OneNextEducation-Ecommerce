@@ -1,0 +1,41 @@
+.add-item__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 10vh);
+}
+
+input[type="file"] {
+    display: flex;
+}
+
+.add-item__img-label {
+    text-align: center;
+    border: solid var(--color-principal);
+    color: var(--color-texto-claro);
+    background-color: var(--color-principal);
+    width: auto;
+    height: fit-content;
+}
+
+.add-item__btn {
+    width: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .add-item__form {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .add-item__form {
+        width: 50%;
+        align-self: center;
+    }
+    
+    .boton {
+        max-width: none;
+    }
+}

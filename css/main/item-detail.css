@@ -3,7 +3,7 @@ main {
 }
 
 .item-detail__img {
-    height: 50vh;
+    height: 40vh;
     width: 100%;
     object-fit: cover;
     object-position: 50% 20%;
