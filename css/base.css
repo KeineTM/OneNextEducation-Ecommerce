@@ -14,6 +14,7 @@
    /* Generados mediante https://codepen.io/sosuke/pen/Pjoqqp a través del código hexadecimal para colorear svg */
    --color-svg: invert(81%) sepia(60%) saturate(2986%) hue-rotate(360deg) brightness(102%) contrast(88%);
    --color-svg-gris: invert(82%) sepia(7%) saturate(16%) hue-rotate(325deg) brightness(79%) contrast(89%);
+   --color-svg-rojo: invert(11%) sepia(100%) saturate(6089%) hue-rotate(354deg) brightness(102%) contrast(85%);
 }
 
 body {

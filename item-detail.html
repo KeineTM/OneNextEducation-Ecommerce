@@ -40,17 +40,9 @@
     
     <!--Main content-->
     <main>
-        <section class="item-detail">
-            <img src="assets/items/Fila_conjunto-short_nino.webp" alt="Imagen del producto" class="item-detail__img">
-            <ul class="item-detail__info">
-                <li><h2 class="item-detail__title">Producto XYZ</h2></li>
-                <li><h3 class="item-detail__price">$9,999.99</h3></li>
-                <li>
-                    <p class="item-detail__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit laborum error tempore voluptate, cumque repudiandae optio placeat dolores repellendus aut alias autem eligendi non deleniti laboriosam sit eveniet vel eaque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit laborum error tempore voluptate, cumque repudiandae optio placeat dolores repellendus aut alias autem eligendi non deleniti laboriosam sit eveniet vel eaque?</p>
-                </li>
-            </ul>           
-        </section>
-
+        <!--Container for the HTML code inyected with JS-->
+        <section data-section></section>
+        
         <section class="category">
             <div class="category__section">
                 <div class="category__title">
@@ -174,5 +166,9 @@
         </section>
     </footer>
 
+    <!-------------------------->
+    <!--Script to connect AJAX-->
+    <!-------------------------->
+    <script src="service/client-service.js"></script>
 </body>
 </html>

@@ -15,6 +15,14 @@
     cursor: pointer;
 }
 
+.btn-delete:hover {
+    filter: var(--color-svg-rojo);
+}
+
+.btn-edit:hover {
+    filter: var(--color-svg);
+}
+
 .category__box {
     align-items: flex-end;
 }

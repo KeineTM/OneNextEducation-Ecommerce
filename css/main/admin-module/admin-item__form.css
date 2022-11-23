@@ -5,17 +5,36 @@
     height: calc(100vh - 10vh);
 }
 
-input[type="file"] {
-    display: flex;
+#add-item__img {
+    border: none;
+    padding: 0;
 }
 
-.add-item__img-label {
+#add-item__img[type="file"] {
+    font-size: 14px;
+    color: var(--color-texto-gris);
+}
+
+#add-item__img::file-selector-button {
+    font-size: 14px;
     text-align: center;
-    border: solid var(--color-principal);
     color: var(--color-texto-claro);
+    border: solid var(--color-principal);
     background-color: var(--color-principal);
-    width: auto;
-    height: fit-content;
+    min-width: 100px;
+    width: fit-content;
+    padding: 1rem;
+}
+
+#add-item__img::file-selector-button:hover {
+    background: var(--color-background-claro);
+    color: var(--color-principal);
+    font-weight: 100;
+    box-shadow: none;
+}
+
+#add-item__img:focus {
+    box-shadow: none;
 }
 
 .add-item__btn {
@@ -37,5 +56,13 @@ input[type="file"] {
     
     .boton {
         max-width: none;
+    }
+
+    #add-item__img[type="file"] {
+        font-size: 16px;
+    }
+
+    #add-item__img::file-selector-button {
+        font-size: 16px;
     }
 }

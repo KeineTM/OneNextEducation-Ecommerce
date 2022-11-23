@@ -1,0 +1,37 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "name": "Conjunto Fila niño", 
+            "price": 300.00, 
+            "description": "Conjunto de dos piezas con short marca Fila. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit laborum error tempore voluptate, cumque repudiandae optio placeat dolores repellendus aut alias autem eligendi non deleniti laboriosam sit eveniet vel eaque?",
+            "categoryId": "1",
+            "imgURL": "assets/items/Fila_conjunto-short_nino.webp"
+        },
+        {
+            "id": 2,
+            "name": "Conjunto Skechers niño", 
+            "price": 300.00, 
+            "description": "Conjunto de dos piezas con short marca Skechers. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit laborum error tempore voluptate, cumque repudiandae optio placeat dolores repellendus aut alias autem eligendi non deleniti laboriosam sit eveniet vel eaque?",
+            "categoryId": "1",
+            "imgURL": "assets/items/Skechers_conjunto-nino.webp"
+        }
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "name": "Ropa infantil",
+            "description": "Ropa para niño y niña"
+        },
+        {
+            "id": 2,
+            "name": "Ropa adulto",
+            "description": "Ropa para dama y caballero"
+        },
+        {
+            "id": 3,
+            "name": "Jugueteria",
+            "description": "Juguetes para todas las edades"
+        }
+    ]
+  }
