@@ -38,12 +38,22 @@
     
     <!--Main content-->
     <main>
-        <form action="" class="login-form contacto__form">
-            <h2 class="login-form__title">Iniciar sesión</h2>
-            <input type="text" class="login-form__email" placeholder="Escriba su correo electrónico">
-            <input type="text" class="login-form__pass" placeholder="Escriba su contraseña">
-            <a href="admin-module/admin-item.html" class="login-form__btn boton">Entrar</a>
-        </form>
+        <section class="main-container" data-container>
+            <form class="login-form contacto__form" data-form-login>
+                <h2 class="login-form__title">Iniciar sesión</h2>
+                <input type="text" class="login-form__input" placeholder="Escriba su correo electrónico" data-form="emailLogin" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                <input type="text" class="login-form__input" placeholder="Escriba su contraseña" data-form="passLogin" required>
+                <button type="submit" class="login-form__btn boton" data-form-btnLogin>Entrar</button>
+            </form>
+            <form class="login-form contacto__form" data-form-register style="display: none;">
+                <h2 class="login-form__title">Registro de usuario</h2>
+                <input type="text" class="login-form__input" placeholder="Escriba su nombre completo" data-form="nombreRegistro" required>
+                <input type="text" class="login-form__input" placeholder="Escriba su correo electrónico" data-form="emailRegistro" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                <input type="text" class="login-form__input" placeholder="Escriba su contraseña" data-form="passRegistro" required>
+                <button type="submit" class="login-form__btn boton">Registrar</button>
+            </form>
+            <button class="boton" data-option>Ir al login</button>
+        </section>
 
         <section class="contacto">
             <div class="contacto__inf">
@@ -64,9 +74,9 @@
 
             <form action="" class="contacto__form">
                 <h3 class="contacto__form-title">Hable con nosotros</h3>
-                <input type="text" placeholder="Nombre" data-form="nombre">
-                <textarea type="text" placeholder="Escriba su mensaje" rows="5" cols="40" data-form="mensaje"></textarea>
-                <a href="#" class="contacto__form-button boton" data-form="boton">Enviar mensaje</a>
+                <input type="text" placeholder="Nombre" data-form="nombreContacto" required maxlength="40">
+                <textarea type="text" placeholder="Escriba su mensaje" rows="5" cols="40" data-form="mensajeContacto" required maxlength="120"></textarea>
+                <button type="submit" class="contacto__form-button boton" data-form-btnContact>Enviar mensaje</button>
             </form>
         </section>
     </main>
@@ -78,6 +88,21 @@
             <p>2022</p>
         </section>
     </footer>
+
+    <script src="js/validate-form.js"></script>
+
+    <!-------------------------------------------------->
+    <!--Script to generale id number-------------------->
+    <!-------------------------------------------------->
+    <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" 
+    integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"></script>
+    <!-------------------------------------------------->
+    <!--Script to connect JSON-Server and execute AJAX-->
+    <!-------------------------------------------------->
+    <script type="module" src="js/controllers/register-controller.js"></script>
 
 </body>
 </html>

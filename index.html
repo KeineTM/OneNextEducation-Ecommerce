@@ -102,9 +102,9 @@
 
             <form action="" class="contacto__form">
                 <h3 class="contacto__form-title">Hable con nosotros</h3>
-                <input type="text" placeholder="Nombre" data-form="nombre">
-                <textarea type="text" placeholder="Escriba su mensaje" rows="5" cols="40" data-form="mensaje"></textarea>
-                <a href="#" class="contacto__form-button boton" data-form="boton">Enviar mensaje</a>
+                <input type="text" placeholder="Nombre" data-form="nombre" required maxlength="40">
+                <textarea type="text" placeholder="Escriba su mensaje" rows="5" cols="40" data-form="mensaje" required maxlength="120"></textarea>
+                <button type="submit" class="contacto__form-button boton" data-contact-form-btn>Enviar mensaje</button>
             </form>
         </section>
     </main>

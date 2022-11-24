@@ -26,5 +26,5 @@ for(let i = 0; i < 3; i++) {
             const newli = createItemList(item.name, item.price, item.imgURL);
             ul[i].appendChild(newli);
         });
-    })
+    }).catch((error) => alert("Ocurrió un error."));
 }
