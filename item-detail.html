@@ -44,91 +44,13 @@
         <section data-section></section>
         
         <section class="category">
-            <div class="category__section">
-                <div class="category__title">
-                    <h2 class="category__title-text">Productos similares</h2>
-                </div>
-                <ul class="category__list">
-                    <li class="category__box">
-                        <span class="category__box-img">
-                            <img src="assets/items/Fila_conjunto-short_nino.webp" alt="Imagen del producto">
-                        </span>
-                        <ul class="category__box-body">
-                            <li class="category__box-text">Producto XYZ</li>
-                            <li class="category__box-text">
-                                <p class="category__box__item-price" data-item="price">$9,999.99</p>
-                                <p class="category__box__item-discount" data-item="discount">Descuento</p>
-                            </li>
-                            <li class="category__box-text"> <a href="item-detail.html">Ver producto</a> </li>
-                        </ul>
-                    </li>
-                    <li class="category__box">
-                        <span class="category__box-img">
-                            <img src="assets/items/Skechers_conjunto-nino.webp" alt="Imagen del producto">
-                        </span>
-                        <ul class="category__box-body">
-                            <li class="category__box-text">Producto XYZ</li>
-                            <li class="category__box-text">
-                                <p class="category__box__item-price" data-item="price">$9,999.99</p>
-                                <p class="category__box__item-discount" data-item="discount">Descuento</p>
-                            </li>
-                            <li class="category__box-text"> <a href="item-detail.html">Ver producto</a> </li>
-                        </ul>
-                    </li>
-                    <li class="category__box">
-                        <span class="category__box-img">
-                            <img src="assets/items/Nautica_pijama_nina.webp" alt="Imagen del producto">
-                        </span>
-                        <ul class="category__box-body">
-                            <li class="category__box-text">Producto XYZ</li>
-                            <li class="category__box-text">
-                                <p class="category__box__item-price" data-item="price">$9,999.99</p>
-                                <p class="category__box__item-discount" data-item="discount">Descuento</p>
-                            </li>
-                            <li class="category__box-text"> <a href="item-detail.html">Ver producto</a> </li>
-                        </ul>
-                    </li>
-                    <li class="category__box">
-                        <span class="category__box-img">
-                            <img src="assets/items/LB_conjunto-short_nino.webp" alt="Imagen del producto">
-                        </span>
-                        <ul class="category__box-body">
-                            <li class="category__box-text">Producto XYZ</li>
-                            <li class="category__box-text">
-                                <p class="category__box__item-price" data-item="price">$9,999.99</p>
-                                <p class="category__box__item-discount" data-item="discount">Descuento</p>
-                            </li>
-                            <li class="category__box-text"> <a href="item-detail.html">Ver producto</a> </li>
-                        </ul>
-                    </li>
-                    <li class="category__box">
-                        <span class="category__box-img">
-                            <img src="assets/items/zapatos-agua_nina.webp" alt="Imagen del producto">
-                        </span>
-                        <ul class="category__box-body">
-                            <li class="category__box-text">Producto XYZ</li>
-                            <li class="category__box-text">
-                                <p class="category__box__item-price" data-item="price">$9,999.99</p>
-                                <p class="category__box__item-discount" data-item="discount">Descuento</p>
-                            </li>
-                            <li class="category__box-text"> <a href="item-detail.html">Ver producto</a> </li>
-                        </ul>
-                    </li>
-                    <li class="category__box">
-                        <span class="category__box-img">
-                            <img src="assets/items/zapatos-agua_nino.webp" alt="Imagen del producto">
-                        </span>
-                        <ul class="category__box-body">
-                            <li class="category__box-text">Producto XYZ</li>
-                            <li class="category__box-text">
-                                <p class="category__box__item-price" data-item="price">$9,999.99</p>
-                                <p class="category__box__item-discount" data-item="discount">Descuento</p>
-                            </li>
-                            <li class="category__box-text"> <a href="item-detail.html">Ver producto</a> </li>
-                        </ul>
-                    </li>
-                </ul>
+            <div class="category__title">
+                <h2 class="category__title-text">Productos similares</h2>
             </div>
+
+            <!--Container for the HTML code inyected with JS-->
+            <ul class="category__list" data-list></ul>
+            
         </section>
 
         <!--Contact section-->
@@ -167,8 +89,9 @@
     </footer>
 
     <!-------------------------->
-    <!--Script to connect AJAX-->
+    <!--Script to connect JSON-Server and execute AJAX-->
     <!-------------------------->
-    <script src="service/client-service.js"></script>
+    <script type="module" src="js/controllers/item-controller.js"></script>
+    <script type="module" src="js/controllers/itemList-controller.js"></script>
 </body>
 </html>

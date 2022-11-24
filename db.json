@@ -1,8 +1,17 @@
 {
+    "users": [
+        {
+            "id": 0,
+            "name": "Jessica Trejo",
+            "email": "trejo@email.com",
+            "pass": "QWERTY@123"
+        }
+    ],
+    
     "items": [
         {
             "id": 1,
-            "name": "Conjunto Fila niño", 
+            "name": "Fila conjunto para niño", 
             "price": 300.00, 
             "description": "Conjunto de dos piezas con short marca Fila. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit laborum error tempore voluptate, cumque repudiandae optio placeat dolores repellendus aut alias autem eligendi non deleniti laboriosam sit eveniet vel eaque?",
             "categoryId": "1",
@@ -10,13 +19,142 @@
         },
         {
             "id": 2,
-            "name": "Conjunto Skechers niño", 
+            "name": "Skechers conjunto para niño", 
             "price": 300.00, 
             "description": "Conjunto de dos piezas con short marca Skechers. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit laborum error tempore voluptate, cumque repudiandae optio placeat dolores repellendus aut alias autem eligendi non deleniti laboriosam sit eveniet vel eaque?",
             "categoryId": "1",
             "imgURL": "assets/items/Skechers_conjunto-nino.webp"
+        },
+        {
+            "id": 3,
+            "name": "Nautica pijama para niña", 
+            "price": 350.00, 
+            "description": "Pijama de 3 piezas con short marca Nautica. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit laborum error tempore voluptate, cumque repudiandae optio placeat dolores repellendus aut alias autem eligendi non deleniti laboriosam sit eveniet vel eaque?",
+            "categoryId": "1",
+            "imgURL": "assets/items/Nautica_pijama_nina.webp"
+        },
+        {
+            "id": 4,
+            "name": "Lucky Brand conjunto para niño", 
+            "price": 280.00, 
+            "description": "Conjunto de dos piezas con short marca Lucky Brand. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit laborum error tempore voluptate, cumque repudiandae optio placeat dolores repellendus aut alias autem eligendi non deleniti laboriosam sit eveniet vel eaque?",
+            "categoryId": "1",
+            "imgURL": "assets/items/LB_conjunto-short_nino.webp"
+        },
+        {
+            "id": 5,
+            "name": "Zapatos acuáticos para niño", 
+            "price": 320.00, 
+            "description": "Zapatos para el agua color gris/verde para niño. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit laborum error tempore voluptate, cumque repudiandae optio placeat dolores repellendus aut alias autem eligendi non deleniti laboriosam sit eveniet vel eaque?",
+            "categoryId": "1",
+            "imgURL": "assets/items/zapatos-agua_nino.webp"
+        },
+        {
+            "id": 6,
+            "name": "Zapatos acuáticos para niña", 
+            "price": 320.00, 
+            "description": "Zapatos para el agua color gris/rosa para niña. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit laborum error tempore voluptate, cumque repudiandae optio placeat dolores repellendus aut alias autem eligendi non deleniti laboriosam sit eveniet vel eaque?",
+            "categoryId": "1",
+            "imgURL": "assets/items/zapatos-agua_nina.webp"
+        },
+        {
+            "id": 7,
+            "name": "Max & Mia blusa para dama", 
+            "price": 300.00, 
+            "description": "Blusa de manga larga color rosa para dama. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit laborum error tempore voluptate, cumque repudiandae optio placeat dolores repellendus aut alias autem eligendi non deleniti laboriosam sit eveniet vel eaque?",
+            "categoryId": "2",
+            "imgURL": "assets/items/blusa.webp"
+        },
+        {
+            "id": 8,
+            "name": "Kirkland leggins para dama", 
+            "price": 300.00, 
+            "description": "Leggins verdes para dama. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit laborum error tempore voluptate, cumque repudiandae optio placeat dolores repellendus aut alias autem eligendi non deleniti laboriosam sit eveniet vel eaque?",
+            "categoryId": "2",
+            "imgURL": "assets/items/Kirk_leggin_dama2.webp"
+        },
+        {
+            "id": 9,
+            "name": "Mondetta playeras para hombre", 
+            "price": 300.00, 
+            "description": "Paquete de dos playeras en color gris/verde para hombre. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit laborum error tempore voluptate, cumque repudiandae optio placeat dolores repellendus aut alias autem eligendi non deleniti laboriosam sit eveniet vel eaque?",
+            "categoryId": "2",
+            "imgURL": "assets/items/Par_playeras.webp"
+        },
+        {
+            "id": 10,
+            "name": "Weatherproof camisa para cabellero", 
+            "price": 300.00, 
+            "description": "Camisa de manga corta para caballero marca Weatherproof. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit laborum error tempore voluptate, cumque repudiandae optio placeat dolores repellendus aut alias autem eligendi non deleniti laboriosam sit eveniet vel eaque?",
+            "categoryId": "2",
+            "imgURL": "assets/items/WP_camisa.webp"
+        },
+        {
+            "id": 11,
+            "name": "32 Degrees sudadera para caballero", 
+            "price": 380.00, 
+            "description": "Sudadera azul para caballero marca 32 Degrees. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit laborum error tempore voluptate, cumque repudiandae optio placeat dolores repellendus aut alias autem eligendi non deleniti laboriosam sit eveniet vel eaque?",
+            "categoryId": "2",
+            "imgURL": "assets/items/Sudadera-caballero.webp"
+        },
+        {
+            "id": 12,
+            "name": "Vanity blusa para dama", 
+            "price": 300.00, 
+            "description": "Blusa verda con manga 3/4 para dama marca Vanity. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit laborum error tempore voluptate, cumque repudiandae optio placeat dolores repellendus aut alias autem eligendi non deleniti laboriosam sit eveniet vel eaque?",
+            "categoryId": "2",
+            "imgURL": "assets/items/Vanity_blusa_dama.webp"
+        },
+        {
+            "id": 13,
+            "name": "Feber Moto correpasillos", 
+            "price": 550.00, 
+            "description": "Moto correpasillos de Cars marca Feber. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit laborum error tempore voluptate, cumque repudiandae optio placeat dolores repellendus aut alias autem eligendi non deleniti laboriosam sit eveniet vel eaque?",
+            "categoryId": "3",
+            "imgURL": "assets/items/713gJALpANL._AC_SL1500_.jpg"
+        },
+        {
+            "id": 14,
+            "name": "Mattel Batman con motocicleta", 
+            "price": 480.00, 
+            "description": "Figura de Batman con motocicleta marca Mattel. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit laborum error tempore voluptate, cumque repudiandae optio placeat dolores repellendus aut alias autem eligendi non deleniti laboriosam sit eveniet vel eaque?",
+            "categoryId": "3",
+            "imgURL": "assets/items/81ZsAsqrbnL._AC_SL1500_.jpg"
+        },
+        {
+            "id": 15,
+            "name": "L.O.L. Muñeca Moonlight B.B.", 
+            "price": 700.00, 
+            "description": "Muñeca Moonlight con accesorios marca L.O.L. O.M.G. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit laborum error tempore voluptate, cumque repudiandae optio placeat dolores repellendus aut alias autem eligendi non deleniti laboriosam sit eveniet vel eaque?",
+            "categoryId": "3",
+            "imgURL": "assets/items/91zmidGkKtS._AC_SL1500_.jpg"
+        },
+        {
+            "id": 16,
+            "name": "Imaginext Batman Baticueva", 
+            "price": 2800.00, 
+            "description": "Baticueva de Batman con accesorios marca Imaginext. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit laborum error tempore voluptate, cumque repudiandae optio placeat dolores repellendus aut alias autem eligendi non deleniti laboriosam sit eveniet vel eaque?",
+            "categoryId": "3",
+            "imgURL": "assets/items/814Ppz1ZbwS._AC_SX425_.jpg"
+        },
+        {
+            "id": 17,
+            "name": "Imaginext ToyStory Pizza Planeta", 
+            "price": 700.00, 
+            "description": "Set de juego Pizza Planeta de ToyStory marca Imaginext. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit laborum error tempore voluptate, cumque repudiandae optio placeat dolores repellendus aut alias autem eligendi non deleniti laboriosam sit eveniet vel eaque?",
+            "categoryId": "3",
+            "imgURL": "assets/items/Imaginext_ToyStory_pizza.jpg"
+        },
+        {
+            "id": 18,
+            "name": "Distroller Cocina", 
+            "price": 2300.00, 
+            "description": "Cocina de MDF marca Distroller. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit laborum error tempore voluptate, cumque repudiandae optio placeat dolores repellendus aut alias autem eligendi non deleniti laboriosam sit eveniet vel eaque?",
+            "categoryId": "3",
+            "imgURL": "assets/items/Distroller_cocina.jpg"
         }
     ],
+
     "categories": [
         {
             "id": 1,
@@ -25,8 +163,8 @@
         },
         {
             "id": 2,
-            "name": "Ropa adulto",
-            "description": "Ropa para dama y caballero"
+            "name": "Ropa para dama y caballero",
+            "description": "Ropa adulto"
         },
         {
             "id": 3,

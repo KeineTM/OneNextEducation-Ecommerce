@@ -17,6 +17,10 @@
    --color-svg-rojo: invert(11%) sepia(100%) saturate(6089%) hue-rotate(354deg) brightness(102%) contrast(85%);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--raleway);
     color: var(--color-texto-oscuro);
