@@ -6,8 +6,8 @@ const createItemList = (name,price,url,id,categoryId) => {
     li.classList.add('category__box');
     const content = 
     `<div class="category__admin-box">
-        <img src="../assets/icons/delete1.svg" alt="Borrar" class="category__admin-img btn-delete" data-delete>
-        <a href="admin-item__edit-form.html?id=${id}" data-link><img src="../assets/icons/edit1.svg" alt="Editar" class="category__admin-img btn-edit" data-edit></a>
+        <img src="assets/icons/delete1.svg" alt="Borrar" class="category__admin-img btn-delete" data-delete>
+        <a href="admin-item__edit-form.html?id=${id}" data-link><img src="assets/icons/edit1.svg" alt="Editar" class="category__admin-img btn-edit" data-edit></a>
     </div>
     <img src="${url}" alt="Imagen del producto" class="category__box-img">
     <ul class="category__box-body">
