@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MiniStore</title>
+    <title>MiniStore - Admin</title>
 
     <!-- Font Raleway -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
@@ -15,10 +14,11 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/header/logo.css">
     <link rel="stylesheet" href="css/header/menu.css">
-    <link rel="stylesheet" href="css/header/banner.css">
-    <link rel="stylesheet" href="css/main/category.css">
     <link rel="stylesheet" href="css/main/contacto.css">
+    <link rel="stylesheet" href="css/main/category.css">
     <link rel="stylesheet" href="css/footer/footer.css">
+    <link rel="stylesheet" href="css/main/admin-module/admin-item.css">
+
 </head>
 
 <body>
@@ -26,7 +26,7 @@
     <header>
         <ul class="header__menu">
             <li class="header__list">
-                <a href="#" class="logo-store">
+                <a href="index.html" class="logo-store">
                     <img src="assets/icons/gift2.svg" alt="Logo de la tienda" class="logo__img">
                     <h1 class="logo__title">Mini <span>Store</span></h1>
                 </a>
@@ -35,57 +35,27 @@
                 <input type="text" placeholder="¿Qué desea buscar?" class="header__search-input" maxlength="50" data-search>
                 <a data-search-btn><img src="/assets/icons/search1.svg" alt="Ícono buscar" class="header__search-img"></a>
             </li>
-            <li class="header__list">
-                <a href="login-register.html" class="header__login boton">Login</a>
-            </li>
         </ul>
-
-        <!--Banner-->
-        <figure class="banner">
-            <h2 class="banner__title">Promociones de Navidad</h2>
-            <p class="banner__text">Productos con el 25% de descuento</p>
-            <a href="#3" class="banner__button boton">Ver Juguetes</a>
-        </figure>
     </header>
 
+    <!--Main content-->
     <main>
         <section class="category">
-            <div class="category__title" id="1">
-                <h2 class="category__title-text">Ropa para niño y niña</h2>
-                <a href="#" class="category__title-next">
-                    Ver todo
-                    <img src="assets/icons/next-arrow1.svg" alt="Flecha" class="category__title-arrow">
-                </a>
+            <div class="category__section">
+                <div class="category__title">
+                    <h2 class="category__title-text">Todos los productos</h2>
+                    <a href="admin-item__add-form.html" class="admin-item__add-btn boton">Agregar producto</a>
+                </div>
+
+                <!--Injection of DB info products-->
+                <ul class="category__list" data-list></ul>
+
             </div>
-            <!--Container for the HTML code inyected with JS: Category: KIDS-->
-            <ul class="category__list" data-list></ul>
-        
-        
-            <div class="category__title" id="2">
-                <h2 class="category__title-text">Ropa dama y caballero</h2>
-                <a href="#" class="category__title-next">
-                    Ver todo
-                    <img src="assets/icons/next-arrow1.svg" alt="Flecha" class="category__title-arrow">
-                </a>
-            </div>
-            <!--Container for the HTML code inyected with JS: Category: KIDS-->
-            <ul class="category__list" data-list></ul>
-        
-        
-            <div class="category__title" id="3">
-                <h2 class="category__title-text">Juguetes</h2>
-                <a href="#" class="category__title-next">
-                    Ver todo
-                    <img src="assets/icons/next-arrow1.svg" alt="Flecha" class="category__title-arrow">
-                </a>
-            </div>
-            <!--Container for the HTML code inyected with JS: Category: KIDS-->
-            <ul class="category__list" data-list></ul>
         </section>
 
         <section class="contacto">
             <div class="contacto__inf">
-                <a href="#" class="logo-store">
+                <a href="index.html" class="logo-store">
                     <img src="assets/icons/gift2.svg" alt="Logo de la tienda" class="logo__img">
                     <h1 class="logo__title">Mini <span>Store</span></h1>
                 </a>
@@ -103,12 +73,13 @@
             <form action="" class="contacto__form">
                 <h3 class="contacto__form-title">Hable con nosotros</h3>
                 <input type="text" placeholder="Nombre" data-form="nombreContacto" required maxlength="40">
-                <textarea type="text" placeholder="Escriba su mensaje" rows="5" cols="40" data-form="mensajeContacto" required maxlength="120"></textarea>
+                <textarea type="text" placeholder="Escriba su mensaje" rows="5" cols="40" data-form="mensaje" required maxlength="120"></textarea>
                 <button type="submit" class="contacto__form-button boton" data-form-btnContact>Enviar mensaje</button>
             </form>
         </section>
     </main>
-
+    
+    <!--Footer info-->
     <footer>
         <section class="footer__text">
             <p>Desarrollado por Jessica Trejo</p>
@@ -116,12 +87,11 @@
         </section>
     </footer>
 
+    <!--Validate functions-->
+    <script src="js/validate-form.js"></script>
     <!-------------------------------------------------->
     <!--Script to connect JSON-Server and execute AJAX-->
     <!-------------------------------------------------->
-    <script type="module" src="js/controllers/categoriesList-controller.js"></script>
-    <!--Validate functions-->
-    <script src="/js/validate-form.js"></script>
+    <script type="module" src="js/controllers/search-item-controller.js"></script>
 </body>
-
 </html>

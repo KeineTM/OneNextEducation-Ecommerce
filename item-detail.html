@@ -32,8 +32,8 @@
                 </a>
             </li> 
             <li class="header__list search-bar">
-                <input type="text" placeholder="¿Qué desea buscar?" class="header__search-input">
-                <img src="assets/icons/search1.svg" alt="Ícono buscar" class="header__search-img">
+                <input type="text" placeholder="¿Qué desea buscar?" class="header__search-input" maxlength="50" data-search>
+                <a data-search-btn><img src="/assets/icons/search1.svg" alt="Ícono buscar" class="header__search-img"></a>
             </li>
         </ul>
     </header>
@@ -73,9 +73,9 @@
 
             <form action="" class="contacto__form">
                 <h3 class="contacto__form-title">Hable con nosotros</h3>
-                <input type="text" placeholder="Nombre" data-form="nombre" required maxlength="40">
-                <textarea type="text" placeholder="Escriba su mensaje" rows="5" cols="40" data-form="mensaje" required maxlength="120"></textarea>
-                <button type="submit" class="contacto__form-button boton" data-contact-form-btn>Enviar mensaje</button>
+                <input type="text" placeholder="Nombre" data-form="nombreContacto" required maxlength="40">
+                <textarea type="text" placeholder="Escriba su mensaje" rows="5" cols="40" data-form="mensajeContacto" required maxlength="120"></textarea>
+                <button type="submit" class="contacto__form-button boton" data-form-btnContact>Enviar mensaje</button>
             </form>
         </section>
     </main>
@@ -88,10 +88,12 @@
         </section>
     </footer>
 
-    <!-------------------------->
+    <!----------------------------------------------------->
     <!--Script to connect JSON-Server and execute AJAX-->
-    <!-------------------------->
-    <script type="module" src="js/controllers/item-controller.js"></script>
-    <script type="module" src="js/controllers/itemList-controller.js"></script>
+    <!----------------------------------------------------->
+    <script type="module" src="js/controllers/itemDetail-controller.js"></script>
+
+    <!--Validate functions-->
+    <script src="/js/validate-form.js"></script>
 </body>
 </html>

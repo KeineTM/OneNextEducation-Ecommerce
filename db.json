@@ -41,20 +41,20 @@
       "imgURL": "assets/items/LB_conjunto-short_nino.webp"
     },
     {
-      "id": 5,
-      "name": "Zapatos acuáticos para niño",
-      "price": 320,
-      "description": "Zapatos para el agua color gris/verde para niño. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit laborum error tempore voluptate, cumque repudiandae optio placeat dolores repellendus aut alias autem eligendi non deleniti laboriosam sit eveniet vel eaque?",
+      "imgURL": "assets/items/zapatos-agua_nino.webp",
       "categoryId": "1",
-      "imgURL": "assets/items/zapatos-agua_nino.webp"
+      "name": "Kombu Zapatos acuáticos para niño",
+      "price": "320",
+      "description": "Zapatos para el agua color gris/verde para niño marca Kombu. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit laborum error tempore voluptate, cumque repudiandae optio placeat dolores repellendus aut alias autem eligendi non deleniti laboriosam sit eveniet vel eaque?",
+      "id": 5
     },
     {
-      "id": 6,
-      "name": "Zapatos acuáticos para niña",
-      "price": 320,
-      "description": "Zapatos para el agua color gris/rosa para niña. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit laborum error tempore voluptate, cumque repudiandae optio placeat dolores repellendus aut alias autem eligendi non deleniti laboriosam sit eveniet vel eaque?",
+      "imgURL": "assets/items/zapatos-agua_nina.webp",
       "categoryId": "1",
-      "imgURL": "assets/items/zapatos-agua_nina.webp"
+      "name": "Kombu Zapatos acuáticos para niña",
+      "price": "320",
+      "description": "Zapatos para el agua color gris/rosa para niña marca Kombu. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit laborum error tempore voluptate, cumque repudiandae optio placeat dolores repellendus aut alias autem eligendi non deleniti laboriosam sit eveniet vel eaque?",
+      "id": 6
     },
     {
       "id": 7,
@@ -151,6 +151,14 @@
       "description": "Cocina de MDF marca Distroller. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit laborum error tempore voluptate, cumque repudiandae optio placeat dolores repellendus aut alias autem eligendi non deleniti laboriosam sit eveniet vel eaque?",
       "categoryId": "3",
       "imgURL": "assets/items/Distroller_cocina.jpg"
+    },
+    {
+      "imgURL": "/assets/items/HQ-mameluco-polar1.webp",
+      "categoryId": "1",
+      "name": "HeadQuarters Mameluco Polar",
+      "price": "200",
+      "description": "Mameluco para bebé varios modelos marca HeadQuarters. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit laborum error tempore voluptate, cumque repudiandae optio placeat dolores repellendus aut alias autem eligendi non deleniti laboriosam sit eveniet vel eaque?",
+      "id": "da928412-5427-4c59-beb9-70934e536d26"
     }
   ],
   "categories": [

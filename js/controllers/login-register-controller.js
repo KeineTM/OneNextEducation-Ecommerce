@@ -18,7 +18,7 @@ formRegister.addEventListener("submit", (event) => {
 })
 
 /* ----------------------------------------------------------------------------- */
-/* ---------------------------- Validación de usuario ---------------------------- */
+/* ---------------------------- Autenticación de usuario ---------------------------- */
 /* ----------------------------------------------------------------------------- */
 const formLogin = document.querySelector('[data-form-login]');
 
@@ -36,17 +36,17 @@ formLogin.addEventListener("submit", (event) => {
             // De existir coincidencia compara la contraseña almacenada con la entrada
                 ? (user.pass === pass)
                 // Si coinciden envía al usuario a la página de administrador, sino, lo informa
-                    ? window.location.href = "admin-module/admin-item.html"
+                    ? window.location.href = "admin-item.html"
                     : alert("Email o contraseña no válidos")
                 : alert("Email o contraseña no válidos")
         });
     }).catch((error) => alert("Ocurrió un error: " + error));
 })
 
-//---------------------------------------------------------------------------------
-// Agrega un evento para moverse entre el formulario de login o el de registro
+/* ----------------------------------------------------------------------------- */
+/* ---------------------------- Cambiar entre formularios ---------------------- */
+/* ----------------------------------------------------------------------------- */
 const button = document.querySelector('[data-option]');
-const container = document.querySelector('[data-container]');
 let showLoginForm = true;
 
 button.addEventListener("click", () =>{

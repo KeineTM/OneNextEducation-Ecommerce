@@ -22,8 +22,11 @@ const mensajesDeError = {
     },
     passLogin: { valueMissing: "La contraseña no puede quedar vacía." }, 
     passRegistro: { valueMissing: "La contraseña no puede quedar vacía." },
-    asuntoContacto: { valueMissing: "El asunto no puede quedar vacío." },
-    mensajeContacto: { valueMissing: "El mensaje no puede quedar vacío ni exceder los 120 caracteres." }
+    asunto: { valueMissing: "El asunto no puede quedar vacío." },
+    mensaje: { valueMissing: "El mensaje no puede quedar vacío ni exceder los 120 caracteres." },
+    url: { valueMissing: "La dirección URL no puede quedar vacía." },
+    precio: { valueMissing: "El precio no puede quedar vacío y únicamente se permiten números." },
+    categoria: { valueMissing: "La categoría no puede quedar vacía y únicamente se permiten números." },
 };
 
 // Array con los tipos de errores que puede generar el formulario
@@ -49,7 +52,7 @@ const validar = (input) => {
     // Evalua la validez de la entrada y genera el mensaje de error correspondiente si es oportuno.
     if(!input.validity.valid) {
         input.setCustomValidity(mostrarMensajeDeError(tipoDeInput, input));
-    }
+    } else input.setCustomValidity("");
 }
 
 // Método forEach aplicado al array de inputs que agrega un evento a cada uno
@@ -58,3 +61,12 @@ inputs.forEach(input => {
         validar(input.target);
     });
 });
+
+//--------------------------------------------------------------------------------------
+// Evento que recupera la cadena ingresada para ejecutar la consulta a la base de datos:
+//--------------------------------------------------------------------------------------
+const searchBtn = document.querySelector('[data-search-btn]');
+searchBtn.addEventListener("click", (event) => {
+    const searchBar = document.querySelector('[data-search').value;
+    if(searchBar) window.location.href = `search-result.html?search=${searchBar}`;
+})

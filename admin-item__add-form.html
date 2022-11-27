@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniStore - login</title>
+
+    <!-- Font Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    
+     <!--Style sheets-->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/header/logo.css">
+    <link rel="stylesheet" href="/css/header/menu.css">
+    <link rel="stylesheet" href="/css/main/contacto.css">
+    <link rel="stylesheet" href="/css/footer/footer.css">
+    <link rel="stylesheet" href="/css/main/admin-module/admin-item__form.css">
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <ul class="header__menu">
+            <li class="header__list">
+                <a href="index.html" class="logo-store">
+                    <img src="/assets/icons/gift2.svg" alt="Logo de la tienda" class="logo__img">
+                    <h1 class="logo__title">Mini <span>Store</span></h1>
+                </a>
+            </li> 
+            <li class="header__list search-bar">
+                <input type="text" placeholder="¿Qué desea buscar?" class="header__search-input" maxlength="50" data-search>
+                <a data-search-btn><img src="/assets/icons/search1.svg" alt="Ícono buscar" class="header__search-img"></a>
+            </li>
+            <li class="header__list">
+                <a href="admin-item.html" class="header__admin-menu-btn boton">Menú Administrador</a>
+            </li>
+        </ul>
+    </header>
+    
+    <!--Main content-->
+    <main>
+        <form action="" class="add-item__form contacto__form" data-form-add>
+            <h2>Agregar nuevo producto</h2>
+            <!--<input type="file" id="add-item__img" data-add="add-img">-->
+            <input type="text" id="add-item__url" data-form="url" placeholder="URL de la imagen del producto en DB" required>
+            <input type="number" id="add-item__category" data-form="categoria" placeholder="ID de la categoría" required>
+            <input type="text" id="add-item__name" data-form="nombreRegistro" placeholder="Nombre del producto" required>
+            <input type="number" id="add-item__price" data-form="precio" placeholder="Precio del producto" required>
+            <textarea id="add-item__description" data-form="mensaje" cols="30" rows="5" placeholder="Descripción del producto" required></textarea>
+            <button type="sumbit" class="add-item__btn boton">Agregar Producto</button>
+        </form>
+
+        <section class="contacto">
+            <div class="contacto__inf">
+                <a href="index.html" class="logo-store">
+                    <img src="/assets/icons/gift2.svg" alt="Logo de la tienda" class="logo__img">
+                    <h1 class="logo__title">Mini <span>Store</span></h1>
+                </a>
+    
+                <ul class="contacto__list">
+                    <li class="contacto__list__links"><a href="#">Quiénes somos</a></li>
+                    <li class="contacto__list__links"><a href="#">Política de privacidad</a></li>
+                    <li class="contacto__list__links"><a href="#">Programa de fidelidad</a></li>
+                    <li class="contacto__list__links"><a href="#">Nuestras tiendas</a></li>
+                    <li class="contacto__list__links"><a href="#">Pagos</a></li>
+                    <li class="contacto__list__links"><a href="#">Envíos</a></li>
+                </ul>
+            </div>
+
+            <form action="" class="contacto__form">
+                <h3 class="contacto__form-title">Hable con nosotros</h3>
+                <input type="text" placeholder="Nombre" data-form="nombreContacto" required maxlength="40">
+                <textarea type="text" placeholder="Escriba su mensaje" rows="5" cols="40" data-form="mensaje" required maxlength="120"></textarea>
+                <button type="submit" class="contacto__form-button boton" data-form-btnContact>Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+    
+    <!--Footer info-->
+    <footer>
+        <section class="footer__text">
+            <p>Desarrollado por Jessica Trejo</p>
+            <p>2022</p>
+        </section>
+    </footer>
+
+    <!--Validate functions-->
+    <script src="/js/validate-form.js"></script>
+     <!-------------------------------------------------->
+    <!--Script to generale id number-------------------->
+    <!-------------------------------------------------->
+    <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" 
+    integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"></script>
+    <!-------------------------------------------------->
+    <!--Script to connect JSON-Server and execute AJAX-->
+    <!-------------------------------------------------->
+    <script type="module" src="/js/controllers/search-item-controller.js"></script>
+</body>
+</html>
