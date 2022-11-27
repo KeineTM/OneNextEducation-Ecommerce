@@ -44,6 +44,10 @@ header {
     width: 20px;
 }
 
+.header__search-img:hover {
+    cursor: pointer;
+}
+
 /* Responsive view Tablet */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .header__menu {

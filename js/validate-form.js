@@ -65,8 +65,14 @@ inputs.forEach(input => {
 //--------------------------------------------------------------------------------------
 // Evento que recupera la cadena ingresada para ejecutar la consulta a la base de datos:
 //--------------------------------------------------------------------------------------
+const searchBar = document.querySelector('[data-search');
+
+const searchItem = () => {
+    if(searchBar.value) window.location.href = `search-result.html?search=${searchBar.value}`;
+}
+
 const searchBtn = document.querySelector('[data-search-btn]');
-searchBtn.addEventListener("click", (event) => {
-    const searchBar = document.querySelector('[data-search').value;
-    if(searchBar) window.location.href = `search-result.html?search=${searchBar}`;
-})
+
+searchBtn.addEventListener("click", () => searchItem() );
+
+searchBar.addEventListener("keyup", (event) => { if (event.keyCode === 13) searchItem() })

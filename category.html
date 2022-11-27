@@ -41,15 +41,11 @@
     <!--Main content-->
     <main>
         <section class="category">
-            <div class="category__section">
-                <div class="category__title">
-                    <h2 class="category__title-text">Resultado de la búsqueda: </h2>
-                </div>
+            <!-- Injection of DB title of category-->
+            <div class="category__title" data-title></div>
 
-                <!--Injection of DB info products-->
-                <ul class="category__list" data-list></ul>
-
-            </div>
+            <!--Injection of DB info products-->
+            <ul class="category__list" data-list></ul>
         </section>
 
         <section class="contacto">
@@ -91,6 +87,6 @@
     <!-------------------------------------------------->
     <!--Script to connect JSON-Server and execute AJAX-->
     <!-------------------------------------------------->
-    <script type="module" src="js/controllers/search-item-controller.js"></script>
+    <script type="module" src="js/controllers/itemByCategory-controller.js"></script>
 </body>
 </html>

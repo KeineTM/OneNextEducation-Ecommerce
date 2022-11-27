@@ -27,8 +27,15 @@ const url = new URL(window.location);
 const search = url.searchParams.get("search");
 
 itemServices.searchItem(search).then((resultPromise) => {
-    resultPromise.forEach(({name, price, imgURL, id, categoryId}) => {
-        const newli = resultList(name, price, imgURL, id, categoryId);
-        ul.appendChild(newli);
-    });
+    if(resultPromise.length === 0) {
+        const h2 = document.createElement("h2");
+        h2.innerHTML = `No se encontraron coincidencias para "${search}"`;
+        ul.appendChild(h2);
+    } 
+    else {
+        resultPromise.forEach(({name, price, imgURL, id, categoryId}) => {
+            const newli = resultList(name, price, imgURL, id, categoryId);
+            ul.appendChild(newli);
+        });
+    }
 }).catch((error) => console.log("Ocurrió un error: " + error));

@@ -40,8 +40,11 @@ const searchItem = (string) => fetch(`http://localhost:3000/items/?q=${string}`)
 // Promesa que consulta un producto por especificación de id
 const getItem = (id) => fetch(`http://localhost:3000/items/${id}`).then( response => response.json() );
 
-// Promesa que consoluta los productos por categoría definida
+// Promesa que consoluta máximo 6 productos por categoría definida
 const displayCategoryList = (categoryId) => fetch(`http://localhost:3000/categories/${categoryId}/items?_limit=6`).then( response => response.json() );
+
+// Promesa que consoluta los productos por categoría definida
+const displayAllCategory = (categoryId) => fetch(`http://localhost:3000/categories/${categoryId}/items`).then( response => response.json() );
 
 // Promesa para editar productos de la DB con PUT
 const createItem = (imgURL,categoryId,name,price,description) => {
@@ -77,6 +80,7 @@ export const itemServices = {
     searchItem,
     getItem,
     displayCategoryList,
+    displayAllCategory,
     createItem,
     updateItem,
     deleteItem,
