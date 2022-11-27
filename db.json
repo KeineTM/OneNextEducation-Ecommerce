@@ -153,7 +153,7 @@
       "imgURL": "assets/items/Distroller_cocina.jpg"
     },
     {
-      "imgURL": "/assets/items/HQ-mameluco-polar1.webp",
+      "imgURL": "assets/items/HQ-mameluco-polar1.webp",
       "categoryId": "1",
       "name": "HeadQuarters Mameluco Polar",
       "price": "200",
