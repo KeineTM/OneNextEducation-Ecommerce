@@ -42,7 +42,14 @@
             <form class="login-form contacto__form" data-form-login>
                 <h2 class="login-form__title">Iniciar sesión</h2>
                 <input type="text" class="login-form__input" placeholder="Escriba su correo electrónico" data-form="emailLogin" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-                <input type="text" class="login-form__input" placeholder="Escriba su contraseña" data-form="passLogin" required>
+                <input type="password" class="login-form__input" placeholder="Escriba su contraseña" data-form="passLogin" required>
+                <!--Button see/hide password-->
+                <div class="switch-button">
+                    <input type="checkbox" id="switch-label" class="switch-button__checkbox" data-check>
+                    <label for="switch-label" class="switch-button__label"></label>
+                    <span>Ver/Ocultar contraseña</span>
+                </div>
+                <!---->
                 <button type="submit" class="login-form__btn boton" data-form-btnLogin>Entrar</button>
             </form>
             <form class="login-form contacto__form" data-form-register style="display: none;">

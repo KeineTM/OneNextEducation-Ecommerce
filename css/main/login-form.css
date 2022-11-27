@@ -2,6 +2,10 @@ main {
     padding: 0;
 }
 
+span {
+    font-size: 12px;
+}
+
 .main-container {
     display: flex;
     flex-direction: column;
@@ -23,6 +27,39 @@ main {
 .login-form__input {
     width: 80vw;
     max-width: 350px;
+}
+
+/* Switch see/hide password button */
+.switch-button {
+    display: inline-block;
+}
+.switch-button .switch-button__checkbox {
+    display: none;
+}
+.switch-button .switch-button__label {
+    background-color: var(--color-texto-gris);
+    width: 2rem;
+    height: 1rem;
+    border-radius: 3rem;
+    display: inline-block;
+    position: relative;
+}
+.switch-button .switch-button__label:before {
+    transition: .2s;
+    display: block;
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    background-color: white;
+    content: '';
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 0px 1px black;
+}
+.switch-button .switch-button__checkbox:checked + .switch-button__label {
+    background-color: var(--color-principal);
+}
+.switch-button .switch-button__checkbox:checked + .switch-button__label:before {
+    transform: translateX(1rem);
 }
 
 /* Responsive view Tablet */

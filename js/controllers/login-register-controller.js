@@ -60,3 +60,15 @@ button.addEventListener("click", () =>{
         formRegister.style.display = "none";
     }
 })
+
+/* ----------------------------------------------------------------------------- */
+/* ---------------------------- Mostrar u ocultar contraseña-------------------- */
+/* ----------------------------------------------------------------------------- */
+const check = document.querySelector('[data-check]');
+
+check.addEventListener("change", () => {
+    const pass = document.querySelector('[data-form="passLogin"]');
+    (pass.type == "password")
+        ? pass.type = "text"
+        : pass.type = "password"
+})
